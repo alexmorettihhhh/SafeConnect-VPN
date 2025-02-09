@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VPN Server Control</title>
+  <script>
+    function startServer() {
+      fetch('/start')
+        .then(response => response.json())
+        .then(data => alert(data.message));
+    }
+
+    function stopServer() {
+      fetch('/stop')
+        .then(response => response.json())
+        .then(data => alert(data.message));
+    }
+  </script>
+</head>
+<body>
+  <h1>VPN Server Control</h1>
+  <button onclick="startServer()">Start VPN Server</button>
+  <button onclick="stopServer()">Stop VPN Server</button>
+</body>
+</html>
