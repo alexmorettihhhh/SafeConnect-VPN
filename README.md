@@ -25,5 +25,5 @@
 Для начала клонируйте репозиторий на вашу локальную машину:
 
 ```bash
-git clone [https://github.com/your-username/SafeConnect-VPN.git](https://github.com/alexmorettihhhh/SafeConnect-VPN.git)
+git clone https://github.com/alexmorettihhhh/SafeConnect-VPN.git
 cd SafeConnect-VPN
